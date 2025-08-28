@@ -9,27 +9,20 @@
       <title>Vite App</title>
     </head>
 
-    <body class="bg-gray-950">
-      <main>
-        <h1 class="font-semibold text-white text-4xl lg:text-7xl mt-8 lg:mt-14 mb-14 lg:mb-28">Page-title</h1>
+    <body class="bg-stone">
+      {{> header logo='/public/logo.svg'}}
+      {{> page-title title="page-title"}}
+      <section class="example bg-slate-500 mb-16 lg:mb-24 pt-12 pb-16 lg:pt-18 lg:pb-24">
+        <div class="container mx-auto px-3">
+          <h2 class="font-semibold text-white text-3xl pt-3 pb-6">example-title</h2>
+      </section>
 
-        <section class="example bg-slate-500 mb-16 lg:mb-24 pt-12 pb-16 lg:pt-18 lg:pb-24">
-          <div class="container mx-auto px-3">
-            <h2 class="font-semibold text-white text-3xl pt-3 pb-6">example-title</h2>
-            <p class="text-white">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos non facere at itaque voluptates, officia eius incidunt impedit excepturi, assumenda explicabo adipisci est qui dolorem, debitis soluta! Id commodi iure ipsum velit eos expedita ipsa repudiandae soluta temporibus iusto dolores quos facere, dolorem et doloribus magni nobis quibusdam sequi non nostrum dignissimos perferendis. Aperiam repudiandae nihil eaque voluptas atque blanditiis ducimus facilis perspiciatis voluptatibus voluptatem dolorem nobis eos pariatur qui est cum fuga, quod eius magnam repellendus. Minus cupiditate mollitia debitis, reiciendis repudiandae alias eius, harum tempora, inventore libero voluptate velit facere ipsum laboriosam veniam quisquam officia distinctio ea aut. Sed a consectetur velit quia perferendis commodi dicta sunt blanditiis rerum asperiores. Accusantium deserunt mollitia perspiciatis natus repellendus beatae doloremque facere veritatis, dolore distinctio at ipsam ratione cupiditate, quae delectus eaque architecto! Facere omnis nulla hic, animi blanditiis quibusdam nam fuga nihil voluptatibus atque voluptatem consequatur ab cupiditate nemo neque accusamus aut suscipit quas, tempora culpa? Blanditiis quis vero corrupti magnam quam voluptatibus animi veniam odit accusamus maxime quo, et ad? Nobis error sint quasi quod eligendi illo quibusdam cum, autem nemo libero repellendus, velit, vel veniam. Qui ipsum repellendus doloribus nulla veritatis sit mollitia distinctio error, vero ab sequi.</p>
-          </div>
-        </section>
-        <section class="example bg-slate-500 mb-16 lg:mb-24 pt-12 pb-16 lg:pt-18 lg:pb-24">
-          <div class="container mx-auto px-3">
-            <h2 class="font-semibold text-white text-3xl pt-3 pb-6">example-title</h2>
-            <p class="text-white">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos non facere at itaque voluptates, officia eius incidunt impedit excepturi, assumenda explicabo adipisci est qui dolorem, debitis soluta! Id commodi iure ipsum velit eos expedita ipsa repudiandae soluta temporibus iusto dolores quos facere, dolorem et doloribus magni nobis quibusdam sequi non nostrum dignissimos perferendis. Aperiam repudiandae nihil eaque voluptas atque blanditiis ducimus facilis perspiciatis voluptatibus voluptatem dolorem nobis eos pariatur qui est cum fuga, quod eius magnam repellendus. Minus cupiditate mollitia debitis, reiciendis repudiandae alias eius, harum tempora, inventore libero voluptate velit facere ipsum laboriosam veniam quisquam officia distinctio ea aut. Sed a consectetur velit quia perferendis commodi dicta sunt blanditiis rerum asperiores. Accusantium deserunt mollitia perspiciatis natus repellendus beatae doloremque facere veritatis, dolore distinctio at ipsam ratione cupiditate, quae delectus eaque architecto! Facere omnis nulla hic, animi blanditiis quibusdam nam fuga nihil voluptatibus atque voluptatem consequatur ab cupiditate nemo neque accusamus aut suscipit quas, tempora culpa? Blanditiis quis vero corrupti magnam quam voluptatibus animi veniam odit accusamus maxime quo, et ad? Nobis error sint quasi quod eligendi illo quibusdam cum, autem nemo libero repellendus, velit, vel veniam. Qui ipsum repellendus doloribus nulla veritatis sit mollitia distinctio error, vero ab sequi.</p>
-          </div>
-        </section>
-      </main>
-
-      <a href="nav.html" class="fixed left-6 bottom-6 bg-pink-500 text-white rounded-full py-1 px-3 hover:bg-pink-600">nav</a>
-
-      <script src="/src/main.js"></script>
+      <section class="example bg-slate-500 mb-16 lg:mb-24 pt-12 pb-16 lg:pt-18 lg:pb-24">
+        <div class="container mx-auto px-3">
+          <h2 class="font-semibold text-white text-3xl pt-3 pb-6">example-title</h2>
+        </div>
+      </section>
+      {{> footer }}
     </body>
 
     </html>
