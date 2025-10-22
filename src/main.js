@@ -65,5 +65,4 @@ window.addEventListener('load', () => {
 
 
     document.querySelectorAll('.tabs').length ? installTabs() : null;
-    document.querySelectorAll('img').length ? getLoremImage() : null;
 })
