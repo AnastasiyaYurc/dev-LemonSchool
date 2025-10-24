@@ -8,8 +8,8 @@
       <link href="/src/style.css" rel="stylesheet">
       <title>Robin Williams</title>
     </head>
-    <body class="bg-black text-white font-sen">
-      <div class="mx-auto px-3 max-w-7xl min-h-screen flex flex-col">
+    <body class="bg-black text-white font-sen min-h-screen flex flex-col overflow-x-hidden">
+ 
         {{> header}}
         {{> banner}}
         {{> experience}}
@@ -21,8 +21,7 @@
               link='More about me'
               image='philosophy.png'
               alt='philosophy'
-              bg-color="bg-amber-100"
-            }}
+              bg-color="bg-amber-100"}}
         {{> skillset}}
         {{> partners}}
         {{> projects}}
@@ -32,15 +31,13 @@
           link='Follow me on IG'
           image='instagram.png'
           alt='intagram'
-          bg-color="bg-pink-100"
-          }}
+          bg-color="bg-pink-100"}}
         {{> dribbble}}
         {{> about}}
-        {{> tabs }}
+        {{> photography}}
         {{> contacts}}
         {{> footer }}
-      </div>
-      </div>
+  
       <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
       <script src="/src/main.js"></script>
     </body>

@@ -38,6 +38,10 @@ window.addEventListener('load', () => {
     }
 
 
+    document.querySelectorAll('.tabs').length ? installTabs() : null;
+})
+
+
 //    let partnersSwiper;
 
 //    function initSwiper() {
@@ -61,8 +65,3 @@ window.addEventListener('load', () => {
 
 //    window.addEventListener("load", initSwiper);
   //  window.addEventListener("resize", initSwiper);
-
-
-
-    document.querySelectorAll('.tabs').length ? installTabs() : null;
-})
