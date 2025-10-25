@@ -1,9 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Sen:wght@400..800&display=swap');
 @import "tailwindcss";
 
-
 @theme {
-
   /*home-page-colors*/
   --color-purple: #5221E6;
   --color-neutral-300: #C4C4C4;
@@ -33,7 +31,6 @@
 }
 
 @layer components {
- 
   .banner-title {
     font-size: 32px;
 
@@ -41,8 +38,20 @@
       font-size: 56px;
     }
 
-    @media (min-width: 1024px) {
+    @media (min-width: 1025px) {
       font-size: 78px;
+    }
+  }
+
+
+  .swiper {
+    .swiper-wrapper {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+
+      @media (min-width: 1025px) {
+        display: flex;
+      }
     }
   }
 }
@@ -50,9 +59,4 @@
 [alt=""] {
   filter: blur(10px);
   opacity: 0.6
-}
-
-.swiper {
-  width: 100%;
-  height: auto;
 }
