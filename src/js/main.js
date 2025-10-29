@@ -1,3 +1,5 @@
+import '../css/style.css'
+
 window.addEventListener('load', () => {
     const burgerBtn = document.querySelector('#burger');
     const mobileContainer = document.querySelector('#mobile-container');
@@ -36,7 +38,20 @@ window.addEventListener('load', () => {
 
     partnersSwiper = new Swiper(".swiper", {
         slidesPerView: 5,
-    })
+        loop: true,
+        autoplay: {
+              delay: 2000,
+              disableOnInteraction: false,
+        },
+        freeMode: true,
+
+        autoplay: {
+        delay:0, 
+        disableOnInteraction: false,
+    },
+    speed: 5000,
+    freeMode: true,
+    });
 
     const initSwiper = () => {
         if (window.innerWidth >= 992 && partnersSwiper) {
@@ -55,3 +70,4 @@ window.addEventListener('load', () => {
 
     document.querySelectorAll('.tabs').length ? installTabs() : null;
 })
+

@@ -43,16 +43,15 @@
     }
   }
 
+  .swiper-wrapper {
+    --swiper-wrapper-transition-timing-function: linear;
+  }
+}
 
-  .swiper {
-    .swiper-wrapper {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-
-      @media (min-width: 1025px) {
-        display: flex;
-      }
-    }
+@media (max-width: 991px) {
+  .swiper .swiper-wrapper {
+    grid-template-columns: 1fr 1fr;
+    display: grid;
   }
 }
 
