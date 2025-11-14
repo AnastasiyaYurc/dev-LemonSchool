@@ -19,7 +19,7 @@ export default defineConfig({
         chunkFileNames: 'assets/js/[name].js',
         assetFileNames: ({ name }) => {
           if (name && name.endsWith('.css')) {
-             return 'assets/css/style.css';U
+             return 'assets/css/style.css';
           }
           if (name && name.includes('.img')) {
           return 'assets/img/[name][extname]';
